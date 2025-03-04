@@ -1,0 +1,6 @@
+텐서 보드를 맥 m1 노트북에 실행하면 바로 안되서
+아래와 같은 순서로 설치후 실행하면 되는거 같다.
+conda create -n tfenv python=3.9 
+conda activate tfenv 
+pip install tensorflow-macos tensorflow-metal
+tensorboard --logdir=./tensorboard_log
